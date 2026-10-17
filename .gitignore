@@ -1,0 +1,3 @@
+# check.cjs downloads the compilers into compilers/ (see README.md); they are not part of the repo.
+compilers/
+soljson-*.js

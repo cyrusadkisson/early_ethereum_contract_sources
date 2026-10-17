@@ -1,0 +1,2 @@
+# Exact bytecode matches depend on these files byte for byte: no line-ending conversion.
+*.sol -text
