@@ -24,7 +24,7 @@ the transaction that deployed it, which also contains the constructor.
 
 | Project | Contract | Address | Deployed (UTC) | File | Source | Match |
 |---|---|---|---|---|---|---|
-| Terra Nullius | Terra Nullius | `0x6e38A457C722C6011B2dfa06d49240e797844d66` | 2015-08-07 20:48 | [`terra_nullius/TerraNullius_0x6e38a457.sol`](terra_nullius/TerraNullius_0x6e38a457.sol) | verified on Etherscan; text rewritten to match | identical |
+| Terra Nullius | Terra Nullius | `0x6e38A457C722C6011B2dfa06d49240e797844d66` | 2015-08-07 20:48 | [`terra_nullius/TerraNullius_0x6e38a457.sol`](terra_nullius/TerraNullius_0x6e38a457.sol) | verified | identical |
 | 69ers | ICAPRegistrar (first) | `0xc076CF70C54c698D4442Cde1561452564FA339A5` | 2015-08-07 23:31 | [`icap_registrar/ICAPRegistrar_0xc076cf70.sol`](icap_registrar/ICAPRegistrar_0xc076cf70.sol) | dapp-bin file, reordered | identical |
 | 69ers | ICAPRegistrar (second) | `0xa1A111bc074c9cfa781F0C38e63bD51c91b8af00` | 2015-08-08 08:08 | [`icap_registrar/ICAPRegistrar_0xa1a111bc.sol`](icap_registrar/ICAPRegistrar_0xa1a111bc.sol) | dapp-bin file, reordered | identical |
 | GlobalRegistrar | v0 (Linagee), v1, v6, v9, v13, v18 | see [below](#globalregistrar-including-the-linagee-copy) | 2015-08-08 to 2016-02-06 | [`global_registrar/`](global_registrar/) | geth 1.0's compiled registrar | identical |
@@ -35,11 +35,11 @@ the transaction that deployed it, which also contains the constructor.
 | PixelMap | PixelMap | `0x015A06a433353f8db634dF4eDdF0C109882A15AB` | 2016-11-17 04:29 | [`pixelmap/PixelMap_0x015a06a4.sol`](pixelmap/PixelMap_0x015a06a4.sol) | verified | identical |
 | PixelMap | wrapper (2021) | `0x050dc61dFB867E0fE3Cf2948362b6c0F3fAF790b` | 2021-08-26 20:07 | [`pixelmap/PixelMapWrapper_0x050dc61d/`](pixelmap/PixelMapWrapper_0x050dc61d/) | verified | identical |
 | Peperium | test factory | `0xc1a542530b304060aeebc7d8808e927e5e673db7` | 2017-04-14 23:16 | [`peperium/CardTokenFactory_test_0xc1a54253.sol`](peperium/CardTokenFactory_test_0xc1a54253.sol) | rebuilt | except metadata hash |
-| Peperium | Series 1 factory | `0xD875c876435A79b5EB2099D06Aa97FFd4fB6FC9d` | 2017-04-14 23:30 | [`peperium/CardTokenFactory_0xd875c876.sol`](peperium/CardTokenFactory_0xd875c876.sol) | verified on Etherscan; text rewritten to match | except metadata hash |
+| Peperium | Series 1 factory | `0xD875c876435A79b5EB2099D06Aa97FFd4fB6FC9d` | 2017-04-14 23:30 | [`peperium/CardTokenFactory_0xd875c876.sol`](peperium/CardTokenFactory_0xd875c876.sol) | verified (a decompilation) | except metadata hash |
 | Peperium | card KFPEPE | `0x648445e48093d999966375b30186D433fEF9c364` | 2017-04-14 23:34 | [`peperium/CardToken_0x648445e4.sol`](peperium/CardToken_0x648445e4.sol) | verified | except metadata hash |
 | Peperium | Series 2 factory | `0xB4e34890034a13325363b3226DCE8EeEc292D626` | 2017-08-27 14:32 | [`peperium/CardTokenFactory2_0xb4e34890.sol`](peperium/CardTokenFactory2_0xb4e34890.sol) | verified (a decompilation) | except metadata hash |
 | Curio Cards | test factory | `0x7605faFE3261438F60defb98F110602E8Cfa45ed` | 2017-05-09 01:24 | [`curio_cards/CardFactory_test_0x7605fafe.sol`](curio_cards/CardFactory_test_0x7605fafe.sol) | rebuilt | except metadata hash |
-| Curio Cards | card factory | `0x37AAb22019448859fc255e6E353A1baF2c05E6Bb` | 2017-05-09 17:18 | [`curio_cards/CardToken_0x6aa2044c.sol`](curio_cards/CardToken_0x6aa2044c.sol) | the verified card file | except metadata hash |
+| Curio Cards | card factory | `0x37AAb22019448859fc255e6E353A1baF2c05E6Bb` | 2017-05-09 17:18 | [`curio_cards/CardToken_0x6aa2044c.sol`](curio_cards/CardToken_0x6aa2044c.sol) | verified | except metadata hash |
 | Curio Cards | card 1 | `0x6Aa2044C7A0f9e2758EdAE97247B03a0D7e73d6c` | 2017-05-09 17:22 | [`curio_cards/CardToken_0x6aa2044c.sol`](curio_cards/CardToken_0x6aa2044c.sol) | verified | except metadata hash |
 | CryptoPunks | v1 | `0x6Ba6f2207e343923BA692e5Cae646Fb0F566DB8D` | 2017-06-09 00:22 | [`cryptopunks/CryptoPunks_0x6ba6f220.sol`](cryptopunks/CryptoPunks_0x6ba6f220.sol) | verified | except metadata hash |
 | CryptoPunks | v2 | `0xb47e3cd837dDF8e4c57F05d70Ab865de6e193BBB` | 2017-06-22 19:40 | [`cryptopunks/CryptoPunksMarket_0xb47e3cd8.sol`](cryptopunks/CryptoPunksMarket_0xb47e3cd8.sol) | verified | except metadata hash |
@@ -54,10 +54,11 @@ the transaction that deployed it, which also contains the constructor.
 | CryptoCats | wrapper (2021) | `0xd0e7Bc3F1EFc5f098534Bce73589835b8273b9a0` | 2021-03-14 17:38 | [`cryptocats/WrappedCryptoCat_0xd0e7bc3f.sol`](cryptocats/WrappedCryptoCat_0xd0e7bc3f.sol) | verified | except metadata hash |
 | CryptoKitties | KittyCore | `0x06012c8cf97BEaD5deAe237070F9587f8E7A266d` | 2017-11-23 05:41 | [`cryptokitties/KittyCore_0x06012c8c.sol`](cryptokitties/KittyCore_0x06012c8c.sol) | verified | except metadata hash |
 
-"Verified" means the source is published by Sourcify and Etherscan for that address; it is copied
-here from Sourcify, byte for byte, except for one character in MoonCatRescue (see below). "Rebuilt" means no source was ever published, and the file was
-written from the bytecode. Every file that is not a verified copy starts with a comment saying how it
-was made.
+"Verified" means the source is published for that address by Etherscan, and in most cases Sourcify
+too. It is copied here byte for byte, from Sourcify or, for Terra Nullius and the Peperium Series 1
+factory, from Etherscan, except for one character in MoonCatRescue (see below). "Rebuilt" means no
+source was ever published, and the file was written from the bytecode. Every file that is not a
+verified copy starts with a comment saying how it was made.
 
 **Do not edit, reformat or re-save the `.sol` files.** Compilers this old can give different output for
 a different file text, even if only a comment changed. The repository's `.gitattributes` stops git from
@@ -67,9 +68,8 @@ converting their line endings.
 
 ### Terra Nullius
 
-Etherscan has verified source for it, but its text could not be retrieved for this repository, so the
-file here was written to match. It reproduces both the deployed code and the deployment input exactly,
-but its formatting may differ from Etherscan's copy.
+The file is Etherscan's verified copy, Windows line endings included. Compiled with Solidity 0.1.1 and
+the optimizer off, it reproduces the deployed code and the deployment input byte for byte.
 
 ### The 69er contracts: ICAPRegistrar
 
@@ -138,17 +138,17 @@ has no `else` branch. They were compiled with Solidity 0.4.4 and the optimizer o
 
 ### Peperium
 
-Etherscan shows verified source for the Series 1 factory, but its text could not be retrieved, so the
-file here was written to match: the verified KFPEPE card source plus a factory in the pattern of Curio
-Cards' published `CardFactory`. Both factories' constructors set `RareCount` to 1, so it reads one more
-than the number of cards created. The test factory is the same code without the line that increments
-`RareCount`. All 22 cards the Series 1 factory created have the same code as KFPEPE. The published
-source of the Series 2 factory is itself a decompilation, made by luna.
+The verified sources Etherscan and Sourcify publish for the Series 1 and Series 2 factories are both
+decompilations made by luna, not the original files, and no original source for either is known. Both
+factories' constructors set `RareCount` to 1, so it reads one more than the number of cards created.
+The test factory was rebuilt for this repository from the verified KFPEPE card source and a factory in
+the pattern of Curio Cards' published `CardFactory`; it is the Series 1 factory without the line that
+increments `RareCount`. All 22 cards the Series 1 factory created have the same code as KFPEPE.
 
 ### Curio Cards
 
-The verified source of card 1 also contains `CardFactory`, and compiled with the same settings it
-reproduces the card factory. The test factory, deployed 16 hours earlier from a different address, is
+Etherscan's verified source for the card factory and Sourcify's for card 1 are the same file, which
+contains both contracts. The test factory, deployed 16 hours earlier from a different address, is
 the same file except that its constructor sets `CardCount` to 1 instead of 0. All 58 cards the card
 factory has created so far have the same code as card 1.
 
